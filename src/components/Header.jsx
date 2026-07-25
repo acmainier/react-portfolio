@@ -1,10 +1,12 @@
 import { Nav } from "./Nav";
 
-export function Header({ onSetPage }) {
+export function Header({ selectedPage, onSetPage }) {
   return (
-    <header>
-      <h1>My React Portfolio</h1>
-      <Nav onSetPage={onSetPage} />
+    <header className="site-header">
+      <div className="site-header-content container">
+        <h1>My Portfolio in React</h1>
+        <Nav selectedPage={selectedPage} onSetPage={onSetPage} />
+      </div>
     </header>
   );
 }

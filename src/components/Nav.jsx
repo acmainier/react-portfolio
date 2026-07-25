@@ -1,12 +1,24 @@
-export function Nav({ onSetPage }) {
+import { NavButton } from "./NavButton";
+
+export function Nav({ selectedPage, onSetPage }) {
   return (
     <nav>
       <ul>
         <li>
-          <button onClick={() => onSetPage("home")}>Home</button>
+          <NavButton
+            selectedPage={selectedPage}
+            onSetPage={onSetPage}
+            id="home"
+            name="Home"
+          />
         </li>
         <li>
-          <button onClick={() => onSetPage("projects")}>Projects</button>
+          <NavButton
+            selectedPage={selectedPage}
+            onSetPage={onSetPage}
+            id="projects"
+            name="Projects"
+          />
         </li>
       </ul>
     </nav>

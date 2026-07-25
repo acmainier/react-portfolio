@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Layout } from "./components/Layout";
-import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 
@@ -9,11 +8,10 @@ function App() {
 
   return (
     <>
-      <Layout onSetPage={setPage}>
+      <Layout selectedPage={page} onSetPage={setPage}>
         {page === "home" && <Home />}
         {page === "projects" && <Projects />}
       </Layout>
-      <Footer />
     </>
   );
 }
