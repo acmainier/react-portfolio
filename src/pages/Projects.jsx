@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Project } from "./Project";
+import { Project } from "../components/Project";
 
 const GITHUB_USERNAME = "acmainier";
 const TOPIC = "bootcamp";
