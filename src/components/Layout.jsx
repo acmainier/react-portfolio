@@ -5,7 +5,9 @@ export function Layout({ children, selectedPage, onSetPage }) {
   return (
     <>
       <Header selectedPage={selectedPage} onSetPage={onSetPage} />
-      <main>{children}</main>
+      <main id="main-content" className="container">
+        {children}
+      </main>
       <Footer />
     </>
   );
