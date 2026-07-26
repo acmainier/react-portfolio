@@ -132,7 +132,8 @@ h2 {
 
 .hero {
   max-width: 65ch;
-  padding-block: var(--space-5);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-5);
 }
 
 .lead {

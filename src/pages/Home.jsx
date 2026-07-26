@@ -1,8 +1,8 @@
 export function Home() {
   return (
     <>
+      <h1>Home</h1>
       <section className="hero">
-        <h1>Home</h1>
         <h2>Introduction</h2>
         <p className="lead">
           Hey! I'm Anne-Cécile. I'm French and I've been living in London with
@@ -10,11 +10,29 @@ export function Home() {
         </p>
 
         <p>
-          In a previous life, I've been an IT business project manager, with 10
-          years of experience in the glass packaging industry and at the French
-          ministry of the Armies. FR-EN Customer advisor and LEGO brick expert
-          for the past 5 years, I'm currently developing my software engineering
-          skills for future career challenges. To be continued...
+          Developer in training. Project manager by background. Problem-solver
+          by nature. I'm currently completing a Full Stack Web Development Level
+          4 Skills Bootcamp at Step8Up Academy — HTML, CSS, JavaScript,
+          responsive design, Git/GitHub, and more. After 10 years managing IT
+          projects across international teams and 5 years in customer-facing
+          roles, I'm making a deliberate move back into the tech and development
+          space. What I bring beyond the code:
+          <ul>
+            <li>
+              A decade of IT project management, including multilingual ERP
+              rollouts across European and South American subsidiaries
+            </li>
+            <li>
+              Bilingual (French/English) with a proven track record in content
+              and communication, including AI chatbot tone-of-voice at The LEGO
+              Group
+            </li>
+            <li>
+              Cross-functional collaboration across business, tech, and
+              operations teams Looking for graduate or junior developer roles
+              where a strong technical foundation meets real-world experience.
+            </li>
+          </ul>
         </p>
 
         <p>
