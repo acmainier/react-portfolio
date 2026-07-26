@@ -22,15 +22,17 @@ export function Projects() {
   return (
     <>
       <h1>My projects</h1>
-      <div>
+      <div className="filter-bar">
         <input
           type="text"
+          className="filter-input"
+          aria-label="Filter projects"
+          placeholder="Filter projects..."
           value={filter}
           onChange={(event) => setFilter(event.target.value)}
         />
-        {filter}
       </div>
-      <ul>
+      <ul className="project-grid">
         {projects
           .filter((project) =>
             project.name.toLowerCase().includes(filter.trim().toLowerCase()),
