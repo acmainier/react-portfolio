@@ -3,7 +3,7 @@ import { NavButton } from "./NavButton";
 export function Nav({ selectedPage, onSetPage }) {
   return (
     <nav>
-      <ul>
+      <ul className="nav-list">
         <li>
           <NavButton
             selectedPage={selectedPage}

@@ -98,9 +98,42 @@ a {
 
 /* Nav */
 
-.nav-button-selected {
-  color: red;
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.nav-button {
-  text-decoration: line-through;
+
+.nav-button,
+.nav-button-selected {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius);
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.nav-button:hover {
+  background: var(--color-bg-subtle);
+}
+
+.nav-button-selected {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-button:focus-visible,
+.nav-button-selected:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
