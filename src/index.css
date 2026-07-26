@@ -6,7 +6,6 @@
   --color-text-muted: #5b5568; /* secondary text, footer, descriptions */
   --color-border: #e4e0ee; /* card/input borders */
   --color-accent: #7c3aed; /* violet-600 — links, active nav, buttons */
-  --color-accent-hover: #6d28d9; /* violet-700 — hover/pressed state */
   --color-accent-contrast: #ffffff; /* text sitting on a filled accent background */
 
   --font-heading: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
@@ -32,7 +31,6 @@
     --color-text-muted: #a79fc0;
     --color-border: #3a3650;
     --color-accent: #a78bfa; /* violet-400 — lighter, needed for contrast on dark bg */
-    --color-accent-hover: #c4b5fd; /* violet-300 */
     --color-accent-contrast: #1e1b2e; /* dark text on a filled light-purple background */
   }
 }
@@ -61,10 +59,6 @@ h1,
 h2 {
   font-family: var(--font-heading);
   line-height: 1.25;
-}
-
-a {
-  color: var(--color-accent);
 }
 
 /* Header */
@@ -294,3 +288,16 @@ a {
 }
 
 /* Footer */
+
+.footer {
+  margin-top: var(--space-5);
+  padding: var(--space-4) var(--space-3);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.heart {
+  color: var(--color-accent);
+}

@@ -22,7 +22,7 @@ export function Home() {
           (with or without my son), walking and baking.
         </p>
       </section>
-      <section className="home-links">
+      <section>
         <h2>Links</h2>
         <ul className="pill-list">
           <li>
@@ -47,7 +47,7 @@ export function Home() {
           </li>
         </ul>
       </section>
-      <section className="home-skills">
+      <section>
         <h2>My skills</h2>
         <ul className="tag-list">
           <li className="tag">Semantic HTML</li>
