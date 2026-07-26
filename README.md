@@ -1,16 +1,35 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site built with React, showcasing my background and the projects I've built during my software engineering bootcamp. This is the third iteration of my portfolio — previously built in vanilla HTML/CSS/JS, reviewed with Bootstrap, and now rebuilt in React.
 
-Currently, two official plugins are available:
+**Live site:** https://my-react-portfolio-3n20.onrender.com/
+**Repository:** https://github.com/acmainier/react-portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Home page** — a short bio/introduction, links to GitHub and LinkedIn, and a list of core skills
+- **Projects page** — dynamically fetches repositories tagged `bootcamp` from my GitHub account via the GitHub REST API, with a live filter input to search by project name
+- Fully responsive layout, from mobile to desktop
+- Accessible by design: keyboard-navigable nav with visible focus states, a skip-to-content link, `aria-current` on the active page, and `aria-live` announcements on the filtered project list
+- Light and dark mode, following the visitor's OS preference
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Screenshot
 
-## Expanding the ESLint configuration
+[Home page](./screenshots/home.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies used
+
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/) — build tool and dev server
+- Plain CSS (custom properties, no framework)
+- [GitHub REST API](https://docs.github.com/en/rest) — `GET /users/{username}/repos`, filtered by the `bootcamp` topic, to populate the Projects page
+- Deployed on [Render](https://render.com/)
+
+## Installation
+
+```bash
+git clone git@github.com:acmainier/react-portfolio.git
+cd react-portfolio
+npm install
+npm run dev
+```
